@@ -46,16 +46,26 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-floating mb-3">
-                        <input asp-for="Input.Course" class="form-control" autocomplete="username" aria-required="true" />
-                        <label asp-for="Input.Course">Curso</label>
+                        <label asp-for="Input.Course"></label>
+                        <select asp-for="Input.Course" class="form-select" autocomplete="username" aria-required="true">
+                            <option value="">Selecione o curso</option>
+                            <option value="Curso 1">Curso 1</option>
+                            <option value="Curso 2">Curso 2</option>
+                            <option value="Curso 3">Curso 3</option>
+                        </select>
                         <span asp-validation-for="Input.Course" class="text-danger"></span>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-floating mb-3">
-                        <input asp-for="Input.Period" class="form-control" autocomplete="username" aria-required="true" />
-                        <label asp-for="Input.Period">Período</label>
+                        <label asp-for="Input.Period"></label>
+                        <select asp-for="Input.Period" class="form-select" autocomplete="username" aria-required="true">
+                            <option value="">Selecione o período</option>
+                            <option value="1º Período">1º Período</option>
+                            <option value="2º Período">2º Período</option>
+                            <option value="3º Período">3º Período</option>
+                        </select>
                         <span asp-validation-for="Input.Period" class="text-danger"></span>
                     </div>
                 </div>
