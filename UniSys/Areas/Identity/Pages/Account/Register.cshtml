@@ -46,12 +46,14 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-floating mb-3">
-                        <label asp-for="Input.Course"></label>
-                        <select asp-for="Input.Course" class="form-select" autocomplete="username" aria-required="true">
-                            <option value="">Selecione o curso</option>
-                            <option value="Curso 1">Curso 1</option>
-                            <option value="Curso 2">Curso 2</option>
-                            <option value="Curso 3">Curso 3</option>
+                        <select asp-for="Input.Course" class="form-select text-start" autocomplete="username" aria-required="true">
+                            <option value="">Curso</option>
+                            <option value="Curso 1">Sistemas de Informação</option>
+                            <option value="Curso 2">Engenharia Civil</option>
+                            <option value="Curso 2">Engenharia Elétrica</option>
+                            <option value="Curso 3">Arquitetura e Urbanismo</option>
+                            <option value="Curso 2">Direito</option>
+                            <option value="Curso 3">Psicologia</option>
                         </select>
                         <span asp-validation-for="Input.Course" class="text-danger"></span>
                     </div>
@@ -59,12 +61,18 @@
 
                 <div class="col-md-6">
                     <div class="form-floating mb-3">
-                        <label asp-for="Input.Period"></label>
-                        <select asp-for="Input.Period" class="form-select" autocomplete="username" aria-required="true">
-                            <option value="">Selecione o período</option>
+                        <select asp-for="Input.Period" class="form-select text-start" autocomplete="username" aria-required="true">
+                            <option value="">Período</option>
                             <option value="1º Período">1º Período</option>
                             <option value="2º Período">2º Período</option>
                             <option value="3º Período">3º Período</option>
+                            <option value="3º Período">4º Período</option>
+                            <option value="3º Período">5º Período</option>
+                            <option value="3º Período">6º Período</option>
+                            <option value="3º Período">7º Período</option>
+                            <option value="3º Período">8º Período</option>
+                            <option value="3º Período">9º Período</option>
+                            <option value="3º Período">10º Período</option>
                         </select>
                         <span asp-validation-for="Input.Period" class="text-danger"></span>
                     </div>
@@ -73,13 +81,13 @@
 
             <div class="form-floating mb-3">
                 <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.Password">Password</label>
+                <label asp-for="Input.Password">Senha</label>
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
 
             <div class="form-floating mb-3">
                 <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                <label asp-for="Input.ConfirmPassword">Confirmar Senha</label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
 
